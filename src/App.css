@@ -1,38 +1,194 @@
-.App {
-  text-align: center;
+.app {
+  margin: 0;
+  padding: 0;
+  background-image: url("./images/background.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+/* header */
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header-container {
   display: flex;
-  flex-direction: column;
+  width: 100%;
+  background-color: #fff;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.nav {
+  background-color: pink;
+  color: #5a717a;
+  padding: 10px;
+  width: 70%;
+  display: flex;
+  height: 35px;
+  align-items: center;
+  border-radius: 15px;
+  justify-content: space-around;
+  margin-bottom: 15px;
+  margin-right: 10px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #5a717a;
+  padding: 5px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.nav a:hover {
+  color: #5d90a4;
+}
+
+.connect-wallet-btn {
+  color: #000;
+  background-color: white;
+  padding: 5px 40px;
+  border: none;
+  font-size: 20px;
+  font-weight: 800;
+  border-radius: 1rem;
+}
+
+.connect-wallet-btn:hover {
+  background-color: #dbdbdb;
+  cursor: pointer;
+}
+
+.connected-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+/* login page */
+.form-container {
+  margin: 3rem 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.right-col .logo {
+  border-radius: 20px;
+  width: 200px;
+  height: auto;
+  margin-right: 7rem;
+}
+
+.left-col {
+  width: 50%;
+  font-size: 5rem;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.left-col .logo-edited {
+  width: 170px;
+  height: auto;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.left-col .on-label {
+  font-size: 6rem;
+}
+
+.signup-container {
+  width: 60%;
+  display: flex;
+  height: 2.5rem;
+  background-color: #fff;
+  border-radius: 20px;
+  flex-direction: row-reverse;
+}
+
+.sign-up-btn {
+  color: #000;
+  background-color: pink;
+  padding: 5px 20px;
+  margin: 5px;
+  border: none;
+  border-radius: 1rem;
+  font-weight: 300;
+}
+
+.action-container {
+  display: flex;
+  width: 60%;
+  justify-content: space-between;
+  margin-top: 1.5rem;
+}
+
+.action-btn {
+  width: 45%;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.login-btn {
+  color: #fff;
+  background-color: #7bb8f1;
+}
+
+.launch-btn {
+  color: #000;
+  background-color: #fff;
+}
+
+/* statistics */
+.statistics-container {
+  display: flex;
+  width: 95%;
+  border-radius: 20px;
+  border: 1px solid #fff;
+  background-color: #fff;
+  opacity: 0.5;
+  justify-content: space-around;
+  height: auto;
+  margin: 0 auto;
+}
+
+.statistic-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 0;
+}
+
+.statistic-item .value {
+  font-weight: 400;
+  font-size: 49px;
+  color: #17344f;
+  margin-bottom: 0.75rem;
+}
+
+.statistic-item .label {
+  font-weight: 400;
+  font-size: 16px;
+  color: #596f78;
+}
+
+/* home page */
+
+.home-container {
+  margin: 8rem 6rem;
+}
+
+.home-container ol {
+  margin-bottom: 3rem;
+}
+
+.home-container li {
+  font-weight: 700;
+  font-size: 28px;
+  color: #fff;
+}
+
+.congratulation {
+  font-weight: 700;
+  font-size: 32px;
+  color: #fff;
 }
